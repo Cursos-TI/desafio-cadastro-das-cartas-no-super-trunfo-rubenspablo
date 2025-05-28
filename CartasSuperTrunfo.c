@@ -1,22 +1,94 @@
-#include <stdio.h>
-
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    char cidade[50], cidade2[50];
+    int populacao, populacao2;
+    float pib, pib2;
+    int pontos_turisticos, pontos_turisticos2;
+
+    // Mensagens de boas-vindas
+    printf("=== SUPER TRUNFO - PAÍSES ===\n");
+    printf("\n\nOlá jogador, seja bem-vindo!\n");
+    printf("\nPrimeiramente vamos começar criando duas cartas.\n");
+
+    printf("\nCada carta vai ter o nome da cidade, com suas respectivas informações.\n");
+    printf("\nJogador, você irá criar sua primeira carta agora.\n");
+    printf("\nCrie a carta de sua cidade com suas respectivas informações:\n");
+
+    // Gravando informalções da carta A
+    printf("Qual o nome da sua cidade A?\n");
+    scanf(" %s", cidade);
+
+    printf("Qual o número de habitantes da cidade?\n");
+    scanf("%d", &populacao);
+
+    printf("Qual é o PIB da sua cidade (em bilhões)?\n");
+    scanf("%f", &pib);
+
+    printf("Quantos pontos turísticos há na sua cidade?\n");
+    scanf("%d", &pontos_turisticos);
+    printf("--------------------------------\n");
+
+    // Exibe Carta A
+    printf("\nOk jogador, vamos ver o que temos:\n\n");
+
+    printf("Até agora estamos assim:\n");
+    printf("\nCarta A:\n       == %s ==\n", cidade);
+
+    printf("--------------------------------\n");
+    printf("População: %d de habitantes\n", populacao);
+    printf("PIB: %.2f bilhões\n", pib);
+    printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos);
+    printf("--------------------------------\n");
+
+    // Gravando informações da carta B  
+    printf("\nEntão agora vamos para proxima carta.\n");
+    printf("Carta B:\n");
+
+
+    printf("\nQual o Nome da cidade?\n");
+    scanf("%s", cidade2);
+
+    printf("Qual o número de habitantes da cidade?\n");
+    scanf("%d", &populacao2);
+
+    printf("Qual o PIB da cidade?\n");
+    scanf("%f", &pib2);
+
+    printf("Quantos pontos turisticos existem na cidade?\n");
+    scanf("%d", &pontos_turisticos2);
+    printf("--------------------------------\n");
+
+    // Exibe carta B
+    printf("Prontinho agora temos a carta B:\n");
+    printf("\nCarta B:\n     == %s ==\n", cidade2);
+
+    printf("----------------------------------\n");
+    printf("População: %d de habitantes\n", populacao2);
+    printf("PIB: %.2f bilhões\n", pib2);
+    printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos2);
+    printf("----------------------------------\n");
+
+    //resume os dados das cartas
+    printf("\nÓtimo agora ja temos as duuas cartas:\n");
+
+    printf("\nCarta A:\n\n    == %s ==\n", cidade);
+
+    printf("--------------------------------\n");
+    printf("População: %d de habitantes\n", populacao);
+    printf("PIB: %.2f bilhões\n", pib);
+    printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos);
+    printf("--------------------------------\n");
+    printf("\nCarta B:\n\n     == %s ==\n", cidade2);
+
+    printf("----------------------------------\n");
+    printf("População: %d de habitantes\n", populacao2);
+    printf("PIB: %.2f bilhões\n", pib2);
+    printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos2);
+    printf("----------------------------------\n\n");
+
+
+
+
+
 
     return 0;
 }
