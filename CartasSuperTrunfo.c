@@ -19,7 +19,7 @@ int main() {
     scanf(" %c", &letra);
     
     printf("Qual o nome da sua cidade A?\n");
-    scanf("%s", cidade);
+    scanf(" %[^\n]", cidade);
 
     printf("Qual o número de habitantes da cidade?\n");
     scanf("%d", &populacao);
@@ -39,6 +39,7 @@ int main() {
 
     printf("--------------------------------\n");
     printf("Estado: %c\n", letra);
+    printf("Cidade: %s\n", cidade);
     printf("Código: %c01\n", letra);
     printf("População: %d de habitantes\n", populacao);
     printf("PIB: %.2f bilhões\n", pib);
@@ -53,7 +54,7 @@ int main() {
     scanf(" %c", &letra2);
 
     printf("\nQual o Nome da cidade?\n");
-    scanf("%s", cidade2);
+    scanf(" %[^\n]", cidade2);
 
     printf("Qual o número de habitantes da cidade?\n");
     scanf("%d", &populacao2);
@@ -71,6 +72,7 @@ int main() {
 
     printf("----------------------------------\n");
     printf("Estado: %c\n", letra2);
+    printf("Cidade: %s", cidade2);
     printf("Código: %c02\n", letra2);
     printf("População: %d de habitantes\n", populacao2);
     printf("PIB: %.2f bilhões\n", pib2);
@@ -83,6 +85,8 @@ int main() {
     printf("\nCarta A:\n\n    == %s ==\n", cidade);
 
     printf("--------------------------------\n");
+    printf("Estado: %c\n", letra);
+    printf("Cidade: %s\n", cidade);
     printf("População: %d de habitantes\n", populacao);
     printf("PIB: %.2f bilhões\n", pib);
     printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos);
@@ -90,6 +94,8 @@ int main() {
     printf("\nCarta B:\n\n     == %s ==\n", cidade2);
 
     printf("----------------------------------\n");
+    printf("Estado: %c\n", letra2);
+    printf("Cidade: %s", cidade2);
     printf("População: %d de habitantes\n", populacao2);
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos2);
