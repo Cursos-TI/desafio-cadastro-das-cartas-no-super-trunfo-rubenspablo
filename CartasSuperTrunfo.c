@@ -100,6 +100,7 @@ int main() {
     printf("--------------------------------\n");
     printf("Estado: %c\n", letra);
     printf("Cidade: %s\n", cidade);
+    printf("Código: %c02\n", letra);
     printf("População: %d de habitantes\n", populacao);
     printf("Área: %.2f km²\n", area);
     printf("PIB: %.2f bilhões\n", pib);
@@ -110,6 +111,7 @@ int main() {
     printf("----------------------------------\n");
     printf("Estado: %c\n", letra2);
     printf("Cidade: %s\n", cidade2);
+    printf("Código: %c02\n", letra2);
     printf("População: %d de habitantes\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões\n", pib2);
