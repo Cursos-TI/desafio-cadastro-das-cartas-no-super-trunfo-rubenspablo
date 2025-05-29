@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main() {
     char cidade[50], cidade2[50];
     int populacao, populacao2;
