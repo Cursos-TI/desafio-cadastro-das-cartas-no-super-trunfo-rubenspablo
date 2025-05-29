@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    char cidade[50], cidade2[50];
+    char cidade[50], cidade2[50], letra, letra2, codigo1, codigo2;
     int populacao, populacao2;
     float pib, pib2;
     int pontos_turisticos, pontos_turisticos2;
@@ -10,13 +10,16 @@ int main() {
     printf("\n\nOlá jogador, seja bem-vindo!\n");
     printf("\nPrimeiramente vamos começar criando duas cartas.\n");
 
-    printf("\nCada carta vai ter o nome da cidade, com suas respectivas informações.\n");
+    printf("\nCada carta vai ter uma letra e o nome da cidade, com suas respectivas informações.\n");
     printf("\nJogador, você irá criar sua primeira carta agora.\n");
     printf("\nCrie a carta de sua cidade com suas respectivas informações:\n");
 
     // Gravando informalções da carta A
+    printf("Escolha uma letra de 'A' a 'H' para sua cidade?\n");
+    scanf(" %c", &letra);
+    
     printf("Qual o nome da sua cidade A?\n");
-    scanf(" %s", cidade);
+    scanf("%s", cidade);
 
     printf("Qual o número de habitantes da cidade?\n");
     scanf("%d", &populacao);
@@ -35,15 +38,19 @@ int main() {
     printf("\nCarta A:\n       == %s ==\n", cidade);
 
     printf("--------------------------------\n");
+    printf("Estado: %c\n", letra);
+    printf("Código: %c01\n", letra);
     printf("População: %d de habitantes\n", populacao);
     printf("PIB: %.2f bilhões\n", pib);
     printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos);
     printf("--------------------------------\n");
 
-    // Gravando informações da carta B  
+    // Gravando informações da carta B 
     printf("\nEntão agora vamos para proxima carta.\n");
     printf("Carta B:\n");
 
+    printf("Escolha uma letra de 'A' a 'H' para sua cidade?\n");
+    scanf(" %c", &letra2);
 
     printf("\nQual o Nome da cidade?\n");
     scanf("%s", cidade2);
@@ -63,6 +70,8 @@ int main() {
     printf("\nCarta B:\n     == %s ==\n", cidade2);
 
     printf("----------------------------------\n");
+    printf("Estado: %c\n", letra2);
+    printf("Código: %c02\n", letra2);
     printf("População: %d de habitantes\n", populacao2);
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos2);
