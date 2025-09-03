@@ -1,127 +1,132 @@
 #include <stdio.h>
-int main() {
-    // Variaveis
-    char cidade[50], cidade2[50], letra, letra2, codigo1, codigo2;
-    int populacao, populacao2;
-    float pib, pib2, area, area2;
-    int pontos_turisticos, pontos_turisticos2;
+int main(){
+    // jogo do Super Trunfo Novato
+    // as variaveis foram declaradas juntas das duas cartas
+    char estado1[40], estado2[40];
+    char codigo1[10], codigo2[10];
+    char cidade1[50], cidade2[50];
+    char letra1, letra2;
+    int populacao1, populacao2;
+    float area1, area2;
+    float pib1, pib2;
+    int pontos1, pontos2;
 
-    // Mensagens de boas-vindas
-    printf("=== SUPER TRUNFO - PAÍSES ===\n");
+    // Apresentação do jogo
+    printf("Olá jogador, seja bem vindo ao Super Trunfo! Um Mundo de disputas e guerras.\n");
+    printf("Onde cada jogador enfrenta desafios jamais vistos, e batalhas épicas são vistas a todo o momento.\n");
+    printf("Para esse desafio teremos que montar suas cartas desafiadoras.\n");
+    printf("Você terá direito a duas cartas inicialmente.\n");
+    printf("Então seja inteligente nas suas escolhas e boa sorte.\n\n");
 
-    printf("\n\nOlá jogador, seja bem-vindo!\n");
 
-    printf("\nPrimeiramente vamos começar criando duas cartas.\n");
+    //carta 01
+    //escolha do Estado
+    printf("Vamos começar com a primeira carta.\n\n");
+    printf("Escolha seu estado.\n");
+    scanf(" %[^\n]", estado1);
 
-    printf("\nCada carta vai ter uma letra e o nome da cidade, com suas respectivas informações.\n");
+    //escolha da letra
+    printf("Escolha uma letra indicando o inicio do codigo da sua carta entre A - H\n");
+    scanf(" %c", &letra1);
+    printf("A Letra escolhida por você foi %c \n", letra1);
 
-    printf("\nJogador, você irá criar sua primeira carta agora.\n");
+    //escolha do código numerico
+    printf("Agora vamos digitar um codigo para juntar com a letra que você ja escolheu\n");
+    printf("Então vamos lá digite o codigo, os números seram de 01 à 04\n");
+    scanf("%s", codigo1);
 
-    printf("\nCrie a carta de sua cidade com suas respectivas informações:\n");
+    // resultado do código
+    printf("Sua carta tem o codigo = %c%s\n", letra1, codigo1);
 
-    // Gravando informalções da carta A
-    printf("Escolha uma letra de 'A' a 'H' para sua cidade?\n");
-    scanf(" %c", &letra);
-    
-    printf("Qual o nome da sua cidade A?\n");
-    scanf(" %[^\n]", cidade);
+    //escolha da cidade
+    printf("Agora vamos preencher os dados da sua carta\n");
+    printf("Qual o nome da sua cidade?\n");
+    scanf(" %[^\n]", cidade1);
 
-    printf("Qual o número de habitantes da cidade?\n");
-    scanf("%d", &populacao);
+    //população da cidade
+    printf("Qual a sua população?\n");
+    scanf("%d", &populacao1);
 
-    printf("Qual é a área em km² (digito somente o numeral)?\n");
-    scanf("%f", &area);
+    //área demográfica da cidade
+    printf("Qual a sua área em Km²?\n");
+    scanf("%f", &area1);
 
-    printf("Qual é o PIB da sua cidade (em bilhões)?\n");
-    scanf("%f", &pib);
+    //O PIB da cidade
+    printf("Qual o seu PIB em Bilhões de Reais (so precisa escrever os numeros)?\n");
+    scanf("%f", &pib1);
 
-    printf("Quantos pontos turísticos há na sua cidade?\n");
-    scanf("%d", &pontos_turisticos);
-    printf("--------------------------------\n");
+    //pontos turísticos da cidade
+    printf("Quantos pontos turísticos tem sua cidade?\n");
+    scanf("%d", &pontos1);
+    printf("\n===Parabens você acaba de concluir sua primeira carta!===\n\n");
 
-    // Exibe Carta A
-    printf("\nOk jogador, vamos ver o que temos:\n\n");
 
-    printf("Até agora estamos assim:\n");
-    printf("\nCarta A:\n       == %s ==\n", cidade);
+    // Carta 02
+    printf("Vamos começar com a segunda carta.\n");
+    printf("Lembre-se seja inteligente nas escolhas\n\n");
 
-    printf("--------------------------------\n");
-    printf("Estado: %c\n", letra);
-    printf("Cidade: %s\n", cidade);
-    printf("Código: %c01\n", letra);
-    printf("População: %d de habitantes\n", populacao);
-    printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f bilhões\n", pib);
-    printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos);
-    printf("--------------------------------\n");
+    // escolha do estado 2
+    printf("Escolha seu estado.\n");
+    scanf(" %[^\n]", estado2);
 
-    // Gravando informações da carta B 
-    printf("\nEntão agora vamos para proxima carta.\n");
-    printf("Carta B:\n");
-
-    printf("Escolha uma letra de 'A' a 'H' para sua cidade?\n");
+    //escolha da letra
+    printf("Escolha uma letra indicando o inicio do codigo da sua carta entre A - H\n");
     scanf(" %c", &letra2);
+    printf("A Letra escolhida por você foi %c\n", letra2);
 
-    printf("\nQual o Nome da cidade?\n");
+    //escolha do código numerico 2
+    printf("Agora vamos digitar um codigo para juntar com a letra que você ja escolheu\n");
+    printf("Então vamos lá digite o codigo, os números seram de 01 à 04\n");
+    scanf("%s", codigo2);
+
+    // resultado do código 2
+    printf("Sua carta tem o codigo = %c%s\n", letra2, codigo2);
+
+    //preenchimento cidade 2
+    printf("Agora vamos preencher os dados da sua carta\n");
+    printf("Qual o nome da sua cidade?\n");
     scanf(" %[^\n]", cidade2);
 
-    printf("Qual o número de habitantes da cidade?\n");
+    //população da cidade 2
+    printf("Qual a sua população?\n");
     scanf("%d", &populacao2);
 
-    printf("Qual é a área em km² (digito somente o numeral)?\n");
+    //área demográfica da cidade 2
+    printf("Qual a sua área em Km²?\n");
     scanf("%f", &area2);
 
-    printf("Qual o PIB da cidade?\n");
+    //O PIB da cidade 2
+    printf("Qual o seu PIB em Bilhões de Reais (so precisa escrever os numeros)?\n");
     scanf("%f", &pib2);
 
-    printf("Quantos pontos turisticos existem na cidade?\n");
-    scanf("%d", &pontos_turisticos2);
-    printf("--------------------------------\n");
+    //pontos turísticos da cidade 2
+    printf("Quantos pontos turísticos tem sua cidade?\n");
+    scanf("%d", &pontos2);
+    printf("\n===Parabens você acaba de concluir sua segunda carta!===\n\n");
 
-    // Exibe carta B
-    printf("Prontinho agora temos a carta B:\n");
-    printf("\nCarta B:\n     == %s ==\n", cidade2);
+    printf("Agora vamos ver o resultado de suas cartas\n\n");
 
-    printf("----------------------------------\n");
-    printf("Estado: %c\n", letra2);
-    printf("Cidade: %s", cidade2);
-    printf("Código: %c02\n", letra2);
-    printf("População: %d de habitantes\n", populacao2);
-    printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões\n", pib2);
-    printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos2);
-    printf("----------------------------------\n");
+    // resultado final
 
-    //resume os dados das cartas
-    printf("\nÓtimo agora ja temos as duuas cartas:\n");
+    printf("Carta 01\n");
+    printf("Estado: %s\n", estado1);
+    printf("Código: %c%s\n", letra1, codigo1);
+    printf("Cidade: %s\n", cidade1);
+    printf("População: %d de habitantes.\n", populacao1);
+    printf("Área: %.2f Km²\n", area1);
+    printf("PIB: %.2f bilhões de Reais\n", pib1);
+    printf("Pontos turísticos: %d\n\n", pontos1);
 
-    printf("\nCarta A:\n\n    == %s ==\n", cidade);
-
-    printf("--------------------------------\n");
-    printf("Estado: %c\n", letra);
-    printf("Cidade: %s\n", cidade);
-    printf("Código: %c02\n", letra);
-    printf("População: %d de habitantes\n", populacao);
-    printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f bilhões\n", pib);
-    printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos);
-    printf("--------------------------------\n");
-    printf("\nCarta B:\n\n     == %s ==\n", cidade2);
-
-    printf("----------------------------------\n");
-    printf("Estado: %c\n", letra2);
+    printf("Carta 02\n");
+    printf("Estado: %s\n", estado2);
+    printf("Código: %c%s\n", letra2, codigo2);
     printf("Cidade: %s\n", cidade2);
-    printf("Código: %c02\n", letra2);
-    printf("População: %d de habitantes\n", populacao2);
-    printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões\n", pib2);
-    printf("Pontos Turísticos: %d pontos turisticos\n", pontos_turisticos2);
-    printf("----------------------------------\n\n");
+    printf("População: %d de habitantes.\n", populacao2);
+    printf("Área: %.2f Km²\n", area2);
+    printf("PIB: %.2f bilhões de Reais\n", pib2);
+    printf("Pontos turísticos: %d\n\n", pontos2);
 
-
-
-
-
+    printf("Agora você conhece suas cartas e está preparado para o novo mundo\n");
 
     return 0;
 }
