@@ -20,6 +20,7 @@ int main() {
     float pibPercapta1, pibPercapta2;
 
     // Apresentação do jogo
+    printf("**** SUPER TRUNFO ****\n");
     printf("Olá jogador, seja bem vindo ao Super Trunfo! Um Mundo de disputas e guerras.\n");
     printf("Onde cada jogador enfrenta desafios jamais vistos, e batalhas épicas são vistas a todo o momento.\n");
     printf("Para esse desafio teremos que montar suas cartas desafiadoras.\n");
@@ -71,7 +72,7 @@ int main() {
     // Calculo da Densidade Demográfica
     densidade1 = (float) populacao1 / area1;
 
-    //calculo ddo pibpercapta
+    //Calculo do pib percapta
     pibPercapta1 = (float) pib1 / populacao1;
 
 
