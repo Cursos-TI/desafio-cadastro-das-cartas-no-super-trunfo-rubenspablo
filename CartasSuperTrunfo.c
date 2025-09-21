@@ -164,15 +164,50 @@ int main() {
 
     //Comparação das Cartas
     printf("Vamos comparar as cartas\n");
-    printf(" A carta 1 tem  a população maior que a carta 2? %d\n", (populacao1 > populacao2));
-    printf(" A carta 1 tem a área maior que a carta 2? %d\n", (area1 > area2));
-    printf(" A carta 1 tem o PIB maior que a carta 2? %d\n", (pib1 > pib2));
-    printf(" A carta 1 tem mais pontos turísticos que a carta 2? %d\n", (pontos1 > pontos2));
-    printf(" A carta 1 tem a densidade demográfica maior que a carta 2? %d\n", (densidade1 > densidade2));
-    printf(" A carta 1 tem o PIB Per Capta maior que a carta 2? %d\n", (pibPercapta1 > pibPercapta2));
-    printf(" A carta 1 tem o Super Poder maior que a carta 2? %d\n", (SuperPoder1 > SuperPoder2));
+    if (populacao1 > populacao2) {
+        printf("A carta 1 tem a maior população\n");
+    } else if (populacao1 < populacao2) {
+        printf("A carta 2 tem a maior população\n");
+    }
 
-    printf("Agora você conhece suas cartas e está preparado para o novo mundo\n");
+    if (area1 > area2) {
+        printf("A carta 1 tem a maior área\n");
+    } else if (area1 < area2) {
+        printf("A carta 2 tem a maior área\n");
+    }
 
+    if (pib1 > pib2) {
+        printf("A carta 1 tem o maior PIB\n");
+    } else if (pib1 < pib2) {
+        printf("A carta 2 tem o maior PIB\n");
+    }
+
+    if (pontos1 > pontos2) {
+        printf("A carta 1 tem mais pontos turísticos\n");
+    } else if (pontos1 < pontos2) {
+        printf("A carta 2 tem mais pontos turísticos\n");
+    }
+
+    if (densidade1 > densidade2) {
+        printf("A carta 2 vence\n");
+    } else if (densidade1 < densidade2) {
+        printf("A carta 1 vence\n");
+    }
+
+    if (pibPercapta1 > pibPercapta2) {
+        printf("A carta 1 tem o maior PIB Per Capta\n");
+    } else if (pibPercapta1 < pibPercapta2) {
+        printf("A carta 2 tem o maior PIB Per Capta\n");
+    }
+    
+    if  (SuperPoder1 > SuperPoder2) {
+        printf("A carta 1 é a vencedora com o maior Super Poder\n");
+    } else if (SuperPoder1 < SuperPoder2) {
+        printf("A carta 2 é a vencedora com o maior Super Poder\n");
+    } else {
+        printf("As duas cartas tem o mesmo Super Poder\n");
+    }
+    
+    
     return 0;
 }
