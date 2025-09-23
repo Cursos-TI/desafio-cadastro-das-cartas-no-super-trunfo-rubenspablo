@@ -124,14 +124,13 @@ int main() {
     scanf("%d", &pontos2);
     printf("\n===Parabens você acaba de concluir sua segunda carta!===\n\n");
 
-    // Calculo do Super Poder 2
-    SuperPoder2 = populacao2 + area2 + pib2 + pontos2 + (1 / densidade2) + pibPercapta2;
-
-
     // Calculo da Densidade Demográfica 2
     densidade2 = (float) populacao2 / area2;
-    //calculo ddo pibpercapta 2
+    //calculo do pib percapta 2
     pibPercapta2 = (float) pib2 / populacao2; 
+
+    // Calculo do Super Poder 2 (agora usando variáveis já calculadas)
+    SuperPoder2 = populacao2 + area2 + pib2 + pontos2 + (1 / densidade2) + pibPercapta2;
 
     printf("Agora vamos ver o resultado de suas cartas\n\n");
 
